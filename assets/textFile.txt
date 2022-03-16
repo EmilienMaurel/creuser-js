@@ -1,0 +1,1 @@
+hello I'm a text file and I'm containing random shit to see if the program is capable of understanding what I'm I talking about and if it can find the relationship between the different elements available in the file
