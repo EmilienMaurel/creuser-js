@@ -4,8 +4,8 @@
   "description": "CreuserJS is helping to understand the relationship between content.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently -k -n \"TS,NO\" -p \"[{name}]\" -c \"blue,green\" \"tsc --project ./config/tsconfig.json --watch\" \"nodemon ./dist/index.js\""
+    "test": "npx jest --watchAll",
+    "dev": "concurrently -k -n \"TS,NO\" -p \"[{name}]\" -c \"blue,green\" \"tsc --watch\" \"nodemon ./dist/index.js\""
   },
   "repository": {
     "type": "git",
@@ -19,9 +19,17 @@
   },
   "homepage": "https://github.com/EmilienMaurel/creuser-js#readme",
   "devDependencies": {
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/jest": "^27.4.1",
     "@types/node": "^17.0.21",
     "concurrently": "^7.0.0",
+    "jest": "^27.5.1",
     "nodemon": "^2.0.15",
     "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "@babel/core": "^7.17.7",
+    "@babel/preset-env": "^7.16.11",
+    "babel-jest": "^27.5.1"
   }
 }
