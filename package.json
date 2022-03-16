@@ -1,0 +1,27 @@
+{
+  "name": "creuser",
+  "version": "1.0.0",
+  "description": "CreuserJS is helping to understand the relationship between content.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently -k -n \"TS,NO\" -p \"[{name}]\" -c \"blue,green\" \"tsc --project ./config/tsconfig.json --watch\" \"nodemon ./dist/index.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmilienMaurel/creuser-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmilienMaurel/creuser-js/issues"
+  },
+  "homepage": "https://github.com/EmilienMaurel/creuser-js#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15",
+    "typescript": "^4.6.2"
+  }
+}
